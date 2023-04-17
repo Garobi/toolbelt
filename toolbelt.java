@@ -8,14 +8,14 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-public class trabalho extends JFrame{
+public class toolbelt extends JFrame{
 
     private JLabel lblNome;
     private JTextField txfPrim, txfSec, txfFinal;
     private JButton btnCalcularButton;
     private JPanel pctDesc;
 
-    public trabalho() {
+    public toolbelt() {
         setSize(1920, 1080);
         setTitle("Tela de Cadastro");
         setLayout(null);
@@ -74,7 +74,7 @@ public class trabalho extends JFrame{
     }
     
     public static void main(String[] args) {
-        new trabalho();
+        new toolbelt();
     }
     
 }
