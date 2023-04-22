@@ -1,12 +1,4 @@
-import java.awt.TextField;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
 public class toolbelt extends JFrame{
 
@@ -23,7 +15,8 @@ public class toolbelt extends JFrame{
         getContentPane().add(cmpPctInc.iniciaComponent());
         cmpRepPct cmpRepPct = new cmpRepPct();
         getContentPane().add(cmpRepPct.iniciaComponent());
-        // cmpRepPart();
+        cmpRepPart cmpRepPart = new cmpRepPart();
+        getContentPane().add(cmpRepPart.iniciaComponent());
         // cmpDescVar();
         // cmpVarDelta();
         // cmpValOrig();

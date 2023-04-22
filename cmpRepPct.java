@@ -12,7 +12,7 @@ public class cmpRepPct {
         pnlMod = new JPanel();
         pnlMod.setLayout(null);
         pnlMod.setBounds(830, 10, 400, 200);
-        pnlMod.setBorder(BorderFactory.createTitledBorder("Quanto X% representa de Y"));
+        pnlMod.setBorder(BorderFactory.createTitledBorder("Amostragem - Quanto X% representa de Y"));
 
         lblNome = new JLabel("Total (a)");
         lblNome.setBounds(10, 25, 110, 25);
