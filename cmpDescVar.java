@@ -11,20 +11,20 @@ public class cmpDescVar extends JFrame{
   public JPanel iniciaComponent(){
       pnlMod = new JPanel();
       pnlMod.setLayout(null);
-      pnlMod.setBounds(1240, 10, 400, 200);
+      pnlMod.setBounds(10, 220, 400, 200);
       pnlMod.setBorder(BorderFactory.createTitledBorder("Aplicar desconto % num valor"));
 
-      lblNome = new JLabel("Valor inicial R$ (a)");
+      lblNome = new JLabel("Valor original (a)");
       lblNome.setBounds(10, 25, 110, 25);
       lblNome.setHorizontalAlignment(SwingConstants.RIGHT);
       pnlMod.add(lblNome);
 
-      lblNome = new JLabel("% desconto (b)");
+      lblNome = new JLabel("Valor com desconto (b)");
       lblNome.setBounds(10, 55, 110, 25);
       lblNome.setHorizontalAlignment(SwingConstants.RIGHT);
       pnlMod.add(lblNome);
 
-      lblNome = new JLabel("Resultado");
+      lblNome = new JLabel("% desconto");
       lblNome.setBounds(10, 85, 110, 25);
       lblNome.setHorizontalAlignment(SwingConstants.RIGHT);
       pnlMod.add(lblNome);
@@ -49,7 +49,7 @@ public class cmpDescVar extends JFrame{
           public void actionPerformed(ActionEvent e) {
               float num1 = Float.parseFloat(txfPrim.getText());
               float num2 = Float.parseFloat(txfSec.getText());
-              String resposta = String.valueOf(num1-(num1*(num2/100)));
+              String resposta = String.valueOf(((num1-num2)/num1)*100);
               txfFinal.setText(resposta);
           }
       });

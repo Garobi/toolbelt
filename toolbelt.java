@@ -17,11 +17,14 @@ public class toolbelt extends JFrame{
         getContentPane().add(cmpRepPct.iniciaComponent());
         cmpRepPart cmpRepPart = new cmpRepPart();
         getContentPane().add(cmpRepPart.iniciaComponent());
-        // cmpDescVar();
+        cmpDescVar cmpDescVar = new cmpDescVar();
+        getContentPane().add(cmpDescVar.iniciaComponent());
         // cmpVarDelta();
         // cmpValOrig();
-        // cmpRegraDeTres();
-        // cmpPasswordGenerator();
+        cmpRegraDeTres cmpRegraDeTres = new cmpRegraDeTres();
+        getContentPane().add(cmpRegraDeTres.iniciaComponent());
+        cmpPasswordGenerator cmpPasswordGenerator = new cmpPasswordGenerator();
+        getContentPane().add(cmpPasswordGenerator.iniciaComponent());
         setVisible(true);
     }
 
