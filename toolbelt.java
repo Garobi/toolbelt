@@ -3,7 +3,7 @@ import javax.swing.JFrame;
 public class toolbelt extends JFrame{
 
     public toolbelt() {
-        setSize(1920, 1080);
+        setSize(1420, 700);
         setTitle("Tela de Cadastro");
         setLayout(null);
         setResizable(false);
@@ -19,8 +19,10 @@ public class toolbelt extends JFrame{
         getContentPane().add(cmpRepPart.iniciaComponent());
         cmpDescVar cmpDescVar = new cmpDescVar();
         getContentPane().add(cmpDescVar.iniciaComponent());
-        // cmpVarDelta();
-        // cmpValOrig();
+        cmpVarDelta cmpVarDelta = new cmpVarDelta();
+        getContentPane().add(cmpVarDelta.iniciaComponent());
+        cmpValOrig cmpValOrig = new cmpValOrig();
+        getContentPane().add(cmpValOrig.iniciaComponent());
         cmpRegraDeTres cmpRegraDeTres = new cmpRegraDeTres();
         getContentPane().add(cmpRegraDeTres.iniciaComponent());
         cmpPasswordGenerator cmpPasswordGenerator = new cmpPasswordGenerator();

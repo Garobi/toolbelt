@@ -11,7 +11,7 @@ public class cmpPctDesc extends JFrame {
     public JPanel iniciaComponent(){
         pnlMod = new JPanel();
         pnlMod.setLayout(null);
-        pnlMod.setBounds(10, 10, 400, 200);
+        pnlMod.setBounds(10, 10, 340, 150);
         pnlMod.setBorder(BorderFactory.createTitledBorder("Aplicar desconto % num valor"));
 
         lblNome = new JLabel("Valor inicial R$ (a)");

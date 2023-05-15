@@ -94,63 +94,12 @@ public class cmpPasswordGenerator extends JFrame {
         }
 
         return String.valueOf(password);
-
-
-//
-//
-//        StringBuilder passwordBuilder = new StringBuilder();
-//        Random random = new Random();
-//
-//        if (upper){
-//            passwordBuilder.append(upperChars.charAt(random.nextInt(upperChars.length())));
-//        }
-//        if(lower){
-//            passwordBuilder.append(lowerChars.charAt(random.nextInt(lowerChars.length())));
-//        }
-//        if (num){
-//            passwordBuilder.append(numChars.charAt(random.nextInt(numChars.length())));
-//        }
-//        if (simb){
-//            passwordBuilder.append(simbChars.charAt(random.nextInt(simbChars.length())));
-//        }
-//        // Ensure at least one character from each option
-//
-//        // Generate remaining characters
-//        int remainingChars = len - 4;
-//        for (int i = 0; i < remainingChars; i++) {
-//            int option = random.nextInt(4);
-//            switch (option) {
-//                case 0:
-//                    passwordBuilder.append(upperChars.charAt(random.nextInt(upperChars.length())));
-//                    break;
-//                case 1:
-//                    passwordBuilder.append(lowerChars.charAt(random.nextInt(lowerChars.length())));
-//                    break;
-//                case 2:
-//                    passwordBuilder.append(numChars.charAt(random.nextInt(numChars.length())));
-//                    break;
-//                case 3:
-//                    passwordBuilder.append(simbChars.charAt(random.nextInt(simbChars.length())));
-//                    break;
-//            }
-//        }
-//
-//        // Shuffle the password characters
-//        String password = passwordBuilder.toString();
-//        char[] passwordChars = password.toCharArray();
-//        for (int i = passwordChars.length - 1; i > 0; i--) {
-//            int j = random.nextInt(i + 1);
-//            char temp = passwordChars[i];
-//            passwordChars[i] = passwordChars[j];
-//            passwordChars[j] = temp;
-//        }
-//        return new String(passwordChars);
     }
 
     public JPanel iniciaComponent(){
         pnlMod = new JPanel();
         pnlMod.setLayout(null);
-        pnlMod.setBounds(540, 430, 520, 200);
+        pnlMod.setBounds(540, 330, 520, 200);
         pnlMod.setBorder(BorderFactory.createTitledBorder("Gerador de Senhas"));
 
         chbUpper = new JCheckBox("Maiúsculas");

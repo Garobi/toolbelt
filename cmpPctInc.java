@@ -11,7 +11,7 @@ public class cmpPctInc extends JFrame {
     public JPanel iniciaComponent(){
         pnlMod = new JPanel();
         pnlMod.setLayout(null);
-        pnlMod.setBounds(420, 10, 400, 200);
+        pnlMod.setBounds(360, 10, 340, 150);
         pnlMod.setBorder(BorderFactory.createTitledBorder("Incrementar % num valor"));
 
         lblNome = new JLabel("Valor inicial R$ (a)");
