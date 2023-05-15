@@ -47,10 +47,16 @@ public class cmpPctDesc extends JFrame {
         btnCalcularButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                float num1 = Float.parseFloat(txfPrim.getText());
-                float num2 = Float.parseFloat(txfSec.getText());
-                String resposta = String.valueOf(num1-(num1*(num2/100)));
-                txfFinal.setText(resposta);
+                String resposta;
+                try {
+                    float num1 = Float.parseFloat(txfPrim.getText());
+                    float num2 = Float.parseFloat(txfSec.getText());
+                    resposta = String.valueOf(num1-(num1*(num2/100)));
+                    txfFinal.setText(resposta);
+                } catch (Exception ex) {
+                    txfFinal.setText("Erro");
+                    throw new RuntimeException(ex);
+                }
             }
         });
         pnlMod.add(btnCalcularButton);

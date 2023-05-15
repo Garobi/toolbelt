@@ -48,10 +48,15 @@ public class cmpVarDelta extends JFrame{
         btnCalcularButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                float num1 = Float.parseFloat(txfPrim.getText());
-                float num2 = Float.parseFloat(txfSec.getText());
-                String resposta = String.valueOf(((num2*100)/num1)-100);
-                txfFinal.setText(resposta);
+                try {
+                    float num1 = Float.parseFloat(txfPrim.getText());
+                    float num2 = Float.parseFloat(txfSec.getText());
+                    String resposta = String.valueOf(((num2*100)/num1)-100);
+                    txfFinal.setText(resposta);
+                } catch (NumberFormatException ex) {
+                    txfFinal.setText("Erro");
+                    throw new RuntimeException(ex);
+                }
             }
         });
         pnlMod.add(btnCalcularButton);
